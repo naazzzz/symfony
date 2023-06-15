@@ -1,3 +1,11 @@
 controllers:
     resource: ../src/Controller/
     type: attribute
+kernel:
+    resource: App\Kernel
+    type: attribute
+articles:
+    path: /articles
+    controller: App\Controller\ArticlesController::list
+api_login_check:
+    path: /api/login_check
